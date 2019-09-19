@@ -12,7 +12,7 @@ LOCAL_HEADER_LIBRARIES        += libhardware_headers
 LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"qdutils\" -Wno-sign-conversion
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
 LOCAL_COPY_HEADERS_TO         := $(common_header_export_path)
-LOCAL_COPY_HEADERS            := display_config.h qd_utils.h
+LOCAL_COPY_HEADERS            := display_config.h
 LOCAL_SRC_FILES               := qd_utils.cpp \
                                  display_config.cpp
 include $(BUILD_SHARED_LIBRARY)
